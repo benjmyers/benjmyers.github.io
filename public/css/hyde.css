@@ -165,9 +165,11 @@ blockquote p:after {
 }
 
 img {
-  display: block;
-  margin: 0 0 15px;
+  display: inline;
   border-radius: 5px;
+  height: 263px;
+  width: 370px;
+  padding: 10px;
 }
 
 
