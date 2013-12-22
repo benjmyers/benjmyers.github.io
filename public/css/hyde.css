@@ -17,6 +17,8 @@ Designed, built, and released under MIT license by @mdo.
 
 Learn more at http://andhyde.com or https://github.com/mdo/hyde.
 
+Minor edits by Meredith M Myers
+
 */
 
 
@@ -258,7 +260,6 @@ a:hover {
   color: #000;
 }
 
-
 /* Error pages (404)
 -------------------------------------------------- */
 
@@ -325,6 +326,15 @@ a:hover {
     margin-left: 35%;
     margin-right: 10%;
     width: 55%;
+  }
+
+  .resume {
+    height: 100%;
+    width: 120%;
+  }
+  .resume-content {
+    height: 100%;
+    margin-left: -30%;
   }
 
   /* Fix the masthead to the side for impact and awesomeness */
