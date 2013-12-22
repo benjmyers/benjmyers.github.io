@@ -360,11 +360,10 @@ a:hover {
 
   .resume {
     height: 100%;
-    width: 120%;
+    width: 100%;
   }
   .resume-content {
     height: 100%;
-    margin-left: -30%;
   }
 
   /* Fix the masthead to the side for impact and awesomeness */
