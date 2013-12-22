@@ -168,7 +168,7 @@ blockquote p:after {
 img {
   display: inline;
   border-radius: 5px;
-  height: 263px;
+  height: 258px;
   width: 370px;
   padding: 10px;
 }
@@ -238,6 +238,30 @@ a:hover {
 .post {
   margin-top: 40px;
   margin-bottom: 40px;
+  display: inline;
+  opacity: 0.8;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 1s linear;
+}
+.post hr {
+  margin: 30px 0;
+}
+.post:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: opacity 1s linear;
+}
+.title {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  display: none;
+}
+.post-header {
+  color: #A6A14B;
+  font-size: 16px;
+  font-weight: 100px;
+
 }
 .post-date {
   display: block;
@@ -328,9 +352,10 @@ a:hover {
 
   /* Center container in available real estate */
   .container {
-    margin-left: 35%;
-    margin-right: 10%;
-    width: 55%;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 65%;
   }
 
   .resume {
@@ -376,8 +401,8 @@ a:hover {
   }
   /* Increase space between posts */
   .post {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* Make pagination stand alone */

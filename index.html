@@ -3,13 +3,10 @@ layout: default
 ---
 
 <div class="posts">
-  <h1>Projects</h1>
   {% for post in site.posts %}
   <div class="post">
+    <div class="title">{{ post.title }}</div>
     <a href="{{ post.url }}">
-      <h3>
-        {{ post.title }}
-      </h3>
       <img src={{ post.image }} alt={{ post.title }}>
     </a>
   </div>
