@@ -60,6 +60,7 @@ h2 {
   font-size: 32px;
 }
 h3 {
+  color: #A6A14B;
   margin-top: 24px;
   font-size: 24px;
 }
@@ -199,7 +200,9 @@ a:hover {
 }
 .masthead h1 {
   margin-top: 0;
-  font-family: "Abril Fatface";
+}
+.masthead h2 {
+  color: #A6A14B;
 }
 .masthead .lead {
   margin-bottom: 0;
