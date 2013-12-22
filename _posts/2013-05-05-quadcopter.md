@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Quadcopter
+language: C
+time: Senior year, 2013
+image: /images/quadcopter/quadcopter3.png
 ---
-
-###May 2013, Senior Year
 
 For my Electronics II final project, a friend and I took on the task of building and programming a Quadcopter. With only three weeks of time, we realized programming the flight control ourselves was pretty much impossible, although I was able to write some code to have two motors "balance" themselves on either end of a seesaw type contraption. 
 
