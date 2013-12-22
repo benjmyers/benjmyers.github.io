@@ -3,6 +3,8 @@ layout: post
 title: Quadcopter
 ---
 
+###May 2013, Senior Year
+
 For my Electronics II final project, a friend and I took on the task of building and programming a Quadcopter. With only three weeks of time, we realized programming the flight control ourselves was pretty much impossible, although I was able to write some code to have two motors "balance" themselves on either end of a seesaw type contraption. 
 
 We utilized an Arduino Uno paired with Xbee radio to control flight wirelessly using a Wii Nunchuck that sent signals through another Xbee. The Arduino on board the copter was then connected to a MultiWii 328P Flight Controller. The flight controller had an on board gyro, accelerometer, and magnetometer. 
