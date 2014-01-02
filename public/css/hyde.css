@@ -39,9 +39,10 @@ body {
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans";
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   color: #454441;
   background-color: #fff;
 }
