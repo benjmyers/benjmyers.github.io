@@ -1,44 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: default
+---
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <title>Meredith M Myers</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Meredith M Myers</h1>
-        <h2>Software Engineer</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/meredithmmyers" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome. </h3>
-
-<p>This is a work in progress.</p>
-
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Contact</h3>
-<p>
-<a href="http://www.myersmeredith.com">Website</a> or contact <a href="mailto:myers@myersmeredith.com">myers@myersmeredith.com</a> </p>
-      </section>
-    </div>
-
-    
-  </body>
-</html>
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <div class="title">{{ post.title }}</div>
+    <a href="{{ post.url }}">
+      <img src={{ post.image }} alt={{ post.title }}>
+    </a>
+  </div>
+  {% endfor %}
+</div>

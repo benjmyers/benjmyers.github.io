@@ -1,0 +1,9 @@
+title:        "Meredith M Myers"
+tagline:      ""
+url:          ""
+author:
+  name:       "Meredith M Myers"
+  email:      ""
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
