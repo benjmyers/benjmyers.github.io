@@ -4,6 +4,7 @@ title: Ballduino
 language: C
 time: Senior year, 2013
 image: /images/ballduino/ballduino1.jpg
+thumb: /images/ballduino/ballduino1-thumb.jpg
 ---
 
 My Electronics II Midterm Project was "create a game", and after a few hours this is what resulted. All code and wiring was done by yours truly.
@@ -16,9 +17,9 @@ An ATmega 328P microcontroller and a KS0108 Graphic LCD were used.The Atmega 328
 <a href="https://github.com/meredithmmyers/Ballduino" target="_blank">Checkout the code</a>
 
 <h3>Images</h3>
-<a href="/images/ballduino/ballduino1.jpg" target="_blank"><img src="/images/ballduino/ballduino1.jpg" alt="Ballduino"></a>
-<a href="/images/ballduino/ballduino2.jpg" target="_blank"><img src="/images/ballduino/ballduino2.jpg" alt="Ballduino"></a>
-<a href="/images/ballduino/ballduino3.jpg" target="_blank"><img src="/images/ballduino/ballduino3.jpg" alt="Ballduino"></a>
-<a href="/images/ballduino/wiring.png" target="_blank"><img src="/images/ballduino/wiring.png" alt="Ballduino"></a>
+<a href="/images/ballduino/ballduino1.jpg" target="_blank"><img src="/images/ballduino/ballduino1-thumb.jpg" alt="Ballduino"></a>
+<a href="/images/ballduino/ballduino2.jpg" target="_blank"><img src="/images/ballduino/ballduino2-thumb.jpg" alt="Ballduino"></a>
+<a href="/images/ballduino/ballduino3.jpg" target="_blank"><img src="/images/ballduino/ballduino3-thumb.jpg" alt="Ballduino"></a>
+<a href="/images/ballduino/wiring.png" target="_blank"><img src="/images/ballduino/wiring-thumb.png" alt="Ballduino"></a>
 
 -----

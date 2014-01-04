@@ -4,6 +4,7 @@ title: Quadcopter
 language: C
 time: Senior year, 2013
 image: /images/quadcopter/quadcopter3.png
+thumb: /images/quadcopter/quadcopter3-thumb.png
 ---
 
 For my Electronics II final project, a friend and I took on the task of building and programming a Quadcopter. With only three weeks of time, we realized programming the flight control ourselves was pretty much impossible, although I was able to write some code to have two motors "balance" themselves on either end of a seesaw type contraption. 
@@ -18,11 +19,11 @@ On demo day, our limited time showed that more time would've been needed to prop
 <a href="https://www.youtube.com/watch?v=andUVL-rQlA" target="_blank">Watch the video</a>
 
 <h3>Images</h3>
-<a href="/images/quadcopter/arduino.png" target="_blank"><img src="/images/quadcopter/arduino.png" alt="Quadcopter" height=500 width=400></a>
-<a href="/images/quadcopter/diagram.png" target="_blank"><img src="/images/quadcopter/diagram.png" alt="Quadcopter"></a>
-<a href="/images/quadcopter/image_2.jpg" target="_blank"><img src="/images/quadcopter/image_2.jpg" alt="Quadcopter"></a>
-<a href="/images/quadcopter/image_3.jpg" target="_blank"><img src="/images/quadcopter/image_3.jpg" alt="Quadcopter"></a>
-<a href="/images/quadcopter/quadcopter1.png" target="_blank"><img src="/images/quadcopter/quadcopter1.png" alt="Quadcopter"></a>
-<a href="/images/quadcopter/quadcopter3.png" target="_blank"><img src="/images/quadcopter/quadcopter3.png" alt="Quadcopter"></a>
+<a href="/images/quadcopter/arduino.png" target="_blank"><img src="/images/quadcopter/arduino-thumb.png" alt="Quadcopter" height=500 width=400></a>
+<a href="/images/quadcopter/diagram.png" target="_blank"><img src="/images/quadcopter/diagram-thumb.png" alt="Quadcopter"></a>
+<a href="/images/quadcopter/image_2.jpg" target="_blank"><img src="/images/quadcopter/image_2_thumb.jpg" alt="Quadcopter"></a>
+<a href="/images/quadcopter/image_3.jpg" target="_blank"><img src="/images/quadcopter/image_3_thumb.jpg" alt="Quadcopter"></a>
+<a href="/images/quadcopter/quadcopter1.png" target="_blank"><img src="/images/quadcopter/quadcopter1-thumb.png" alt="Quadcopter"></a>
+<a href="/images/quadcopter/quadcopter3.png" target="_blank"><img src="/images/quadcopter/quadcopter3-thumb.png" alt="Quadcopter"></a>
 
 -----
