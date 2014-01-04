@@ -358,7 +358,7 @@ a:hover {
 
   /* Center container in available real estate */
   .container {
-    margin-left: 30%;
+    margin-left: 35%;
     margin-right: 5%;
     margin-top: 2%;
     width: 65%;
@@ -403,8 +403,7 @@ a:hover {
   }
   /* Increase space between posts */
   .post {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 10px;
   }
 
   /* Make pagination stand alone */
