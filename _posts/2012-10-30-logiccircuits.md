@@ -4,6 +4,7 @@ title: Logic Circuits
 language: Logic circuit
 time: Senior year, 2012
 image: /images/logic/logic2.jpg
+thumb: /images/logic/logic2-thumb.jpg
 ---
 
 My Organization of Computer Systems class involved a lot of circuit building. 
@@ -46,7 +47,7 @@ This logic circuit controls the traffic lights for a simple T intersection. It i
 <a href="http://www.youtube.com/watch?v=YeH2NMJ2Rlc" target="_blank">Watch a video</a>
 
 <h3>Images</h3>
-<a href="/images/logic/logic1.jpg" target="_blank"><img src="/images/logic/logic1.jpg" alt="Adder"></a>
-<a href="/images/logic/logic2.jpg" target="_blank"><img src="/images/logic/logic2.jpg" alt="Adder"></a>
+<a href="/images/logic/logic1.jpg" target="_blank"><img src="/images/logic/logic1-thumb.jpg" alt="Adder"></a>
+<a href="/images/logic/logic2.jpg" target="_blank"><img src="/images/logic/logic2-thumb.jpg" alt="Adder"></a>
 
 -----

@@ -170,7 +170,6 @@ img {
   border-radius: 5px;
   height: 258px;
   width: 370px;
-  padding: 10px;
 }
 
 
@@ -244,7 +243,8 @@ a:hover {
 .post {
   margin-top: 40px;
   margin-bottom: 40px;
-  display: inline;
+  display: inline-block;
+  position: relative;
   opacity: 0.8;
     filter: alpha(opacity=50);
     -webkit-transition: opacity 1s linear;
@@ -258,10 +258,21 @@ a:hover {
   -webkit-transition: opacity 1s linear;
 }
 .title {
+  display: block;
   position: absolute;
-  top: 0%;
-  bottom: 0%;
-  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.title:hover {
+    opacity: 1; 
+}
+.title-text {
+  height: 20%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .post-header {
   color: #A6A14B;
@@ -358,10 +369,10 @@ a:hover {
 
   /* Center container in available real estate */
   .container {
-    margin-left: 30%;
+    margin-left: 35%;
     margin-right: 5%;
     margin-top: 2%;
-    width: 65%;
+    width: 60%;
   }
 
   .resume {
@@ -403,8 +414,8 @@ a:hover {
   }
   /* Increase space between posts */
   .post {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    position: relative;
+    margin: 10px;
   }
 
   /* Make pagination stand alone */
