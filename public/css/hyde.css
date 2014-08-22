@@ -17,7 +17,7 @@ Designed, built, and released under MIT license by @mdo.
 
 Learn more at http://andhyde.com or https://github.com/mdo/hyde.
 
-Minor edits by Meredith M Myers
+Edits by Meredith M Myers
 
 */
 
@@ -43,7 +43,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: #454441;
+  color: #404040;
   background-color: #fff;
 }
 
@@ -61,7 +61,7 @@ h2 {
   font-size: 32px;
 }
 h3 {
-  color: #A6A14B;
+  color: #50888F;
   margin-top: 24px;
   font-size: 24px;
 }
@@ -82,6 +82,10 @@ ul, ol {
 }
 li {
   color: #888580;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.1em;
 }
 
 hr {
@@ -167,7 +171,6 @@ blockquote p:after {
 
 img {
   display: inline;
-  border-radius: 5px;
   height: 258px;
   width: 370px;
 }
@@ -178,7 +181,7 @@ img {
 
 a {
   font-weight: 100;
-  color: #222;
+  color: #DD6E57;
   text-decoration: none;
 }
 
@@ -194,32 +197,42 @@ a:hover {
 
 /* Scaffolding
 -------------------------------------------------- */
-
+.side-bar {
+  height: 20px;
+  width: 100%;
+  background: #DD6E57;
+}
 /* Header */
 .masthead {
   color: #fff;
-  background-color: #2a2a2a;
+  background-color: #50888F;
 }
 .masthead-inner {
   padding: 20px;
+  text-align: center;
 }
 .masthead h1 {
   margin-top: 0;
 }
 .masthead h2 {
-  color: #A6A14B;
+  color: #accccc;
+  font-size: 23px;
 }
 .masthead .lead {
   margin-bottom: 0;
 }
 .masthead a {
   color: #fff;
+  cursor: pointer;
+}
+.masthead a:hover {
+  color: #accccc;
 }
 
 /* Footer area of masthead */
 .colophon {
   margin-top: 20px;
-  color: #7a7a7a;
+  color: #404040;
 }
 .colophon p {
   font-size: 10px;
@@ -235,19 +248,22 @@ a:hover {
 
 /* Wrapper for all posts on homepage */
 .posts {
-  margin-left:  20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* Single post */
 .post {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   position: relative;
-  opacity: 0.8;
     filter: alpha(opacity=50);
     -webkit-transition: opacity 1s linear;
+}
+.post h1 {
+  color: #DD6E57;
 }
 .post hr {
   margin: 30px 0;
@@ -257,15 +273,17 @@ a:hover {
   filter: alpha(opacity=100);
   -webkit-transition: opacity 1s linear;
 }
+.post-background {
+  border: 3px solid #accccc;
+  height: 264px;
+  width: 100%;
+}
 .title {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 100%;
-  opacity: 0;
-}
-.title:hover {
-    opacity: 1; 
+  opacity: 1;
 }
 .title-text {
   height: 20%;
@@ -273,9 +291,10 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 10px;
   padding-left: 10px;
+  text-align: left;
 }
 .post-header {
-  color: #A6A14B;
+  color: #ACCCCC;
   font-size: 16px;
   font-weight: 100px;
 
@@ -344,6 +363,17 @@ a:hover {
   background-color: #f5f5f5;
 }
 
+.large-copyright {
+  display: none;
+  font-size: .6em;
+}
+.small-copyright {
+  display: block;
+  text-align: center;
+  background: #50888F;
+  color: #accccc;
+  padding: 1em;
+}
 
 /* Responsive
 -------------------------------------------------- */
@@ -367,6 +397,11 @@ a:hover {
     font-size: 24px;
   }
 
+  .side-bar {
+    height: 100%;
+    width: 20px;
+    background: #DD6E57;
+  }
   /* Center container in available real estate */
   .container {
     margin-left: 35%;
@@ -396,7 +431,8 @@ a:hover {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: 20px;
+    text-align: left;
   }
   .masthead h1 {
     font-size: 44px;
@@ -404,7 +440,6 @@ a:hover {
 
   .masthead h2 {
     font-size: 23px;
-    color: #A6A14B;
   }
 
   /* Remove mobile device padding from list of posts */
@@ -418,10 +453,28 @@ a:hover {
     margin: 10px;
   }
 
-  /* Make pagination stand alone */
-  .pagination {
-    margin-bottom: 60px;
-    border: 1px solid #eee;
+  .title {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .title:hover {
+      opacity: 1; 
   }
 
+  li {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 1em;
+  }
+
+  .large-copyright {
+    display: block;
+  }
+  .small-copyright {
+    display: none;
+  }
 }

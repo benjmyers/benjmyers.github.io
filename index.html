@@ -5,14 +5,16 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
-    <a href="{{ post.url }}">
-      <div class="title">
-      	<div class="title-text">
-      		{{ post.title }}
-      	</div>
-      </div>
-      <img src={{ post.thumb }} alt={{ post.title }}>
-    </a>
+    <div class="post-background">
+      <a href="{{ post.url }}">
+        <div class="title">
+        	<div class="title-text">
+        		{{ post.title }}
+        	</div>
+        </div>
+        <img src={{ post.thumb }} alt={{ post.title }}>
+      </a>
+    </div>
   </div>
   {% endfor %}
 </div>
