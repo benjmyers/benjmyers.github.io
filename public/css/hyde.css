@@ -172,7 +172,7 @@ blockquote p:after {
 img {
   display: inline;
   height: 258px;
-  width: 370px;
+  width: 350px;
 }
 
 
@@ -362,10 +362,10 @@ a:hover {
   }
   /* Center container in available real estate */
   .container {
-    margin-left: 35%;
+    margin-left: 30%;
     margin-right: 5%;
     margin-top: 2%;
-    width: 60%;
+    width: 65%;
   }
 
   .resume {
