@@ -4,7 +4,7 @@ title: Ballduino
 language: C
 time: Senior year, 2013
 image: /images/ballduino/ballduino1.jpg
-thumb: /images/ballduino/ballduino1-thumb.jpg
+thumb: /images/ballduino/ballduino1.jpg
 ---
 
 My Electronics II Midterm Project was "create a game", and after a few hours this is what resulted. All code and wiring was done by yours truly.

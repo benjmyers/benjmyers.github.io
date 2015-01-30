@@ -3,7 +3,7 @@ layout: post
 title: Hierarchie
 language: JavaScript, D3, Angular
 time: June, 2014
-thumb: /images/hierarchie/fullscreen.png
+thumb: /images/hierarchie/hierarchie-lg.png
 ---
 
 Hierarchie is a structured display of topics from discussion surrounding the MH-370 airliner disappearance. Run on a corpus of Tweets, Reddit comments, and Daily Beast articles, Hierarchical LDA was used to create a structure of topic models. The Hierarchie application allows the user to explore this structure. 

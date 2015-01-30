@@ -4,7 +4,7 @@ title: Py Brick Breaker
 language: Python
 time: Sophomore year, 2010
 image: /images/brickbreaker/brickbreaker.png
-thumb: /images/brickbreaker/brickbreaker-thumb.png
+thumb: /images/brickbreaker/brickbreaker.png
 ---
 
 This simple Python adaptation of the classic game “Breakout” was created for the final project in my Intro to Comp Sci I class. It uses Python’s Tkinter graphics library.
