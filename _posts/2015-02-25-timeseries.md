@@ -6,11 +6,13 @@ time: February 2015
 thumb: /images/timeseries/timeseries.png
 ---
 
-This portfolio page for my team, the Machine Learning Visualization Lab at Decisive Analytics Corporation, was designed to showcase our forward facing data visualizations. Built using AngularJS and with simplicity in mind.
+<img src="/images/timeseries/timeseries.png"/>
+
+A basic timeseries built with D3.js. Supports filtering, and orients based on your date range. 
 
 <h3>Links</h3>
-<a href="http://meredithmmyers.com/timeseries" target="_blank">View the site</a>
+<a href="http://mlvl.github.io/timeseries" target="_blank">Live demo</a>
 <br>
-<a href="https://github.com/meredithmmyers/timeseries" target="_blank">Source on GitHub</a>
+<a href="https://github.com/mlvl/timeseries" target="_blank">Source on GitHub</a>
 
 -----
