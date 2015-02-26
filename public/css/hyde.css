@@ -213,6 +213,10 @@ a:hover {
   padding: 20px;
   text-align: center;
 }
+.masthead-inner .tag {
+  font-size: 0.8em;
+  color: #accccc;
+}
 .masthead h1 {
   margin-top: 0;
 }
@@ -277,6 +281,7 @@ a:hover {
   -webkit-transition: opacity 1s linear;
 }
 .post-background {
+  box-shadow: rgba(0,0,0,0.15) 0px 0px 3px;
   margin: auto;
   height: 225px;
   overflow-x: hidden;
@@ -434,7 +439,7 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
   }
   .title:hover {
       opacity: 1; 
