@@ -1,20 +1,50 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-  <div class="post">
-    <div class="post-background">
-      <a href="{{ post.url }}">
-        <div class="title">
-        	<div class="title-text">
-        		{{ post.title }}
-        	</div>
+<html>
+  <header>
+    <title>Meredith M Myers</title>
+    <link href="css/main.css" rel="stylesheet">
+  </header>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div></div>
+        <div>
+          <h3>Meredith M.</h3>
+          <h1>MYERS</h1>
+          <p>Data, history, code.</p>
         </div>
-        <img src={{ post.thumb }} alt={{ post.title }}>
-      </a>
+        
+        <div></div>
+        <p class="links">
+          <a href="https://twitter.com/meredithmmyers">@meredithmmyers</a><br>
+          <a href="https://github.com/meredithmmyers">github/meredithmmyers</a>
+        </p>
+      </div>
+      <div class="right">
+        <div class="item">
+          <a href="http://meredithmmyers.com/model-company/#/"><h1>Model Company: An Uncommon Look at the Common Civil War Soldier</h1></a>
+          <h3>Personal Project</h3>
+        </div>
+        <div class="item">
+          <a href="http://chronicle.com/article/Minimum-Wage-Work-Alone/232675/"><h1>Minimum-Wage Work Alone Won't Get You Through College</h1></a>
+          <h3>The Chronicle of Higher Education</h3>
+        </div>
+        <div class="item">
+          <a href="https://philanthropy.com/interactives/how-america-gives-opportunity-index"><h1>A Mismatch Between Need and Affluence</h1></a>
+          <h3>The Chronicle of Philanthropy</h3>
+        </div>
+        <div class="item">
+          <a href="https://philanthropy.com/interactives/giving-usa-2015"><h1>Philanthropy Surges 5.4% to Record $358 Billion, Says 'Giving USA'</h1></a>
+          <h3>The Chronicle of Philanthropy</h3>
+        </div>
+        <div class="item">
+          <a href="http://chronicle.com/article/What-It-Takes-to-Make-the/230213/"><h1>What It Takes To Make The Class</h1></a>
+          <h3>The Chronicle of Higher Education</h3>
+        </div>
+        <div class="item">
+          <a href="http://meredithmmyers.com/ratmap/#/"><h1>NYC Ratmap</h1></a>
+          <h3>Personal Project</h3>
+        </div>
+      </div>
     </div>
-  </div>
-  {% endfor %}
-</div>
+  </body>
+</html>

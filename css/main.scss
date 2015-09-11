@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
+
+$font-color: #393D41;
+$font-grey: #788087;
+$font-highlight: #DB6948;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: $font-color;
+    background-color: #fefefe;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; 
+    color: $font-color;
+    text-decoration: none;
+    &:hover {
+        color: $font-highlight;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: 100vh;
+    h3, h1 {
+        font-family: 'Oswald', sans-serif; 
+        font-size: 2.5em;
+        margin: 0;
+        line-height: 1.1em;
+    }
+    h1 {
+        font-size: 4.5em;
+    }
+    div {
+        flex: 1 1 auto;
+    }
+    p {
+        color: $font-highlight;
+        flex: 1 1 auto;
+    }
+    .links {
+        flex: 0 1 auto;
+        padding-bottom: 5%;
+    }
+}
+
+.right {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    height: 100vh;
+    .item {
+        padding: 1em 0;
+        flex: 1 1 auto;
+        h1 {
+            font-family: 'Amiri';
+            font-weight: 400;
+            font-size: 22px;
+            margin: 0;
+        }
+        h3 {
+            color: $font-grey;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}
