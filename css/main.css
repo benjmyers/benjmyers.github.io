@@ -3,13 +3,14 @@
 @import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #393D41;
   background-color: #fefefe;
-  overflow: hidden; }
-  @media (max-width: 800px) {
+  overflow: scroll; }
+  @media (min-width: 800px) {
     body {
-      overflow: scroll; } }
+      overflow: hidden;
+      font-size: 16px; } }
 
 a {
   font-family: 'Open Sans', sans-serif;
@@ -21,26 +22,27 @@ a {
 
 .container {
   display: flex;
-  flex-direction: row; }
-  @media (max-width: 800px) {
+  flex-direction: column; }
+  @media (min-width: 800px) {
     .container {
-      flex-direction: column; } }
+      flex-direction: row; } }
 
 .left {
   display: flex;
-  width: 40%;
+  width: 100%;
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-around;
   align-content: stretch;
   align-items: flex-start;
-  height: 100vh;
-  padding-left: 1%; }
-  @media (max-width: 800px) {
+  height: auto;
+  padding-left: 1%;
+  margin-top: 2em; }
+  @media (min-width: 800px) {
     .left {
-      width: 100%;
-      height: auto;
-      margin-top: 2em; } }
+      width: 40%;
+      height: 100vh;
+      margin-top: 0; } }
   .left h3, .left h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
@@ -67,18 +69,18 @@ a {
   display: flex;
   flex-direction: column;
   align-content: stretch;
-  height: 100vh;
-  width: 60%; }
-  @media (max-width: 800px) {
+  height: auto;
+  width: 100%; }
+  @media (min-width: 800px) {
     .right {
-      height: auto;
-      width: 100%; } }
+      height: 100vh;
+      width: 60%; } }
   .right .item {
-    padding: 1.5em;
+    padding: 1em 1%;
     flex: 1 1 auto; }
-    @media (max-width: 800px) {
+    @media (min-width: 800px) {
       .right .item {
-        padding: 1em 1%; } }
+        padding: 1.5em; } }
     .right .item h1 {
       font-family: 'Amiri';
       font-weight: 400;
@@ -93,16 +95,16 @@ a {
 
 .divider {
   background-color: #BFBFBF;
-  position: absolute;
-  width: 1px;
-  height: 70vh;
-  left: 38%;
-  top: 15vh; }
-  @media (max-width: 800px) {
+  position: inherit;
+  width: 90vw;
+  height: 1px;
+  margin: auto; }
+  @media (min-width: 800px) {
     .divider {
-      position: inherit;
-      width: 90vw;
-      height: 1px;
-      margin: auto; } }
+      position: absolute;
+      width: 1px;
+      height: 70vh;
+      left: 38%;
+      top: 15vh; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,12 +8,13 @@ $font-highlight: #DB6948;
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: $font-color;
     background-color: #fefefe;
-    overflow: hidden;
-    @media (max-width: 800px) {
-        overflow: scroll;
+    overflow: scroll;
+    @media (min-width: 800px) {
+        overflow: hidden;
+        font-size: 16px;
     }
 }
 
@@ -29,26 +30,27 @@ a {
 
 .container {
     display: flex;
-    flex-direction: row;
-    @media (max-width: 800px) {
-        flex-direction: column;
+    flex-direction: column;
+    @media (min-width: 800px) {
+        flex-direction: row;
     }
 }
 
 .left {
     display: flex;
-    width: 40%;
+    width: 100%;
     flex: 1 1 auto;
     flex-direction: column;
     justify-content: space-around;
     align-content: stretch;
     align-items: flex-start;
-    height: 100vh;
+    height: auto;
     padding-left: 1%;
-    @media (max-width: 800px) {
-        width: 100%;
-        height: auto;
-        margin-top: 2em;
+    margin-top: 2em;
+    @media (min-width: 800px) {
+        width: 40%;
+        height: 100vh;
+        margin-top: 0;
     }
     h3, h1 {
         font-family: 'Montserrat', sans-serif;
@@ -83,17 +85,17 @@ a {
     display: flex;
     flex-direction: column;
     align-content: stretch;
-    height: 100vh;
-    width: 60%;
-    @media (max-width: 800px) {
-        height: auto;
-        width: 100%;
+    height: auto;
+    width: 100%;
+    @media (min-width: 800px) {
+        height: 100vh;
+        width: 60%;
     }
     .item {
-        padding: 1.5em;
+        padding: 1em 1%;
         flex: 1 1 auto;
-        @media (max-width: 800px) {
-            padding: 1em 1%;
+        @media (min-width: 800px) {
+            padding: 1.5em;
         }
         h1 {
             font-family: 'Amiri';
@@ -113,15 +115,15 @@ a {
 
 .divider {
     background-color: #BFBFBF;
-    position: absolute;
-    width: 1px;
-    height: 70vh;
-    left: 38%;
-    top: 15vh;
-    @media (max-width: 800px) {
-        position: inherit;
-        width: 90vw;
-        height: 1px;
-        margin: auto;
+    position: inherit;
+    width: 90vw;
+    height: 1px;
+    margin: auto;
+    @media (min-width: 800px) {
+        position: absolute;
+        width: 1px;
+        height: 70vh;
+        left: 38%;
+        top: 15vh;
     }
 }
