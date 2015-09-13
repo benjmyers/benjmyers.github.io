@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
 @import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
 
 $font-color: #393D41;
@@ -12,11 +12,14 @@ body {
     color: $font-color;
     background-color: #fefefe;
     overflow: hidden;
+    @media (max-width: 800px) {
+        overflow: scroll;
+    }
 }
 
 a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px; 
+    font-size: 14px; 
     color: $font-color;
     text-decoration: none;
     &:hover {
@@ -26,28 +29,39 @@ a {
 
 .container {
     display: flex;
+    flex-direction: row;
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 .left {
-    flex: 1 1 auto;
     display: flex;
+    width: 40%;
+    flex: 1 1 auto;
     flex-direction: column;
-     justify-content: space-around;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
+    justify-content: space-around;
     align-content: stretch;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
     align-items: flex-start;
     height: 100vh;
+    padding-left: 1%;
+    @media (max-width: 800px) {
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+    }
     h3, h1 {
-        font-family: 'Oswald', sans-serif; 
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.5em;
+        font-weight: 800;
         margin: 0;
         line-height: 1.1em;
     }
     h1 {
-        font-size: 4.5em;
+        font-size: 5em;
+    }
+    h3 {
+        padding-left: 4px;
     }
     div {
         flex: 1 1 auto;
@@ -55,10 +69,12 @@ a {
     p {
         color: $font-highlight;
         flex: 1 1 auto;
+        padding-left: 5px;
     }
     .links {
         flex: 0 1 auto;
         padding-bottom: 5%;
+        font-weight: 600;
     }
 }
 
@@ -68,19 +84,44 @@ a {
     flex-direction: column;
     align-content: stretch;
     height: 100vh;
+    width: 60%;
+    @media (max-width: 800px) {
+        height: auto;
+        width: 100%;
+    }
     .item {
-        padding: 1em 0;
+        padding: 1.5em;
         flex: 1 1 auto;
+        @media (max-width: 800px) {
+            padding: 1em 1%;
+        }
         h1 {
             font-family: 'Amiri';
             font-weight: 400;
-            font-size: 22px;
+            font-size: 20px;
             margin: 0;
+            line-height: 1em;
         }
         h3 {
             color: $font-grey;
+            font-weight: 400;
             font-size: 12px;
             margin: 0;
         }
+    }
+}
+
+.divider {
+    background-color: #BFBFBF;
+    position: absolute;
+    width: 1px;
+    height: 70vh;
+    left: 38%;
+    top: 15vh;
+    @media (max-width: 800px) {
+        position: inherit;
+        width: 90vw;
+        height: 1px;
+        margin: auto;
     }
 }
