@@ -1,0 +1,51 @@
+$font-color: #393D41;
+$font-grey: #788087;
+$font-highlight: #DB6948;
+
+.top {
+    text-align: center;
+    margin-bottom: 2em;
+    h3 {
+        margin-top: 1.5em;
+    }
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    @media (max-width: 800px) {
+        width: 95%;
+    }
+}
+
+.item {
+    p {
+        font-size: 0.8em;
+    }
+    h3 {
+        margin-bottom: 5px;
+    }
+    .tools {
+        color: $font-grey;
+    }
+}
+
+.skills {
+    padding: 1em 1%;
+    @media (min-width: 800px) {
+        padding: 1.5em;
+    }
+    ul {
+        padding: 0 1.2em;
+    }
+    .skill {
+        width: 32%;
+        display: inline-block;
+        vertical-align: top;
+        @media (max-width: 800px) {
+             width: 100%;
+            display: block;
+        }
+    }
+}
+

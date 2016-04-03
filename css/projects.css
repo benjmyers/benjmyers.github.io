@@ -1,0 +1,37 @@
+.top {
+  text-align: center;
+  margin-bottom: 2em; }
+  .top h3 {
+    margin-top: 1.5em; }
+
+.container {
+  width: 70%;
+  margin: auto; }
+  @media (max-width: 800px) {
+    .container {
+      width: 95%; } }
+
+.item p {
+  font-size: 0.8em; }
+.item h3 {
+  margin-bottom: 5px; }
+.item .tools {
+  color: #788087; }
+
+.skills {
+  padding: 1em 1%; }
+  @media (min-width: 800px) {
+    .skills {
+      padding: 1.5em; } }
+  .skills ul {
+    padding: 0 1.2em; }
+  .skills .skill {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top; }
+    @media (max-width: 800px) {
+      .skills .skill {
+        width: 100%;
+        display: block; } }
+
+/*# sourceMappingURL=projects.css.map */
