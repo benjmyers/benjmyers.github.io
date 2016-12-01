@@ -38,14 +38,5 @@ $font-highlight: #DB6948;
     ul {
         padding: 0 1.2em;
     }
-    .skill {
-        width: 32%;
-        display: inline-block;
-        vertical-align: top;
-        @media (max-width: 800px) {
-             width: 100%;
-            display: block;
-        }
-    }
 }
 
