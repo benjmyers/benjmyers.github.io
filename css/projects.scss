@@ -7,6 +7,10 @@ $font-highlight: #DB6948;
     margin-bottom: 2em;
     h3 {
         margin-top: 1.5em;
+        color: $font-color;
+        &:hover {
+            color: $font-highlight;
+        }
     }
 }
 
@@ -15,6 +19,14 @@ $font-highlight: #DB6948;
     margin: auto;
     @media (max-width: 800px) {
         width: 95%;
+    }
+}
+
+a {
+    color: $font-highlight;
+    text-decoration: none;
+    &:hover {
+        color: $font-color;
     }
 }
 

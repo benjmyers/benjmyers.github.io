@@ -6,15 +6,19 @@
     <link href="./css/projects.css" rel="stylesheet">
     <script>
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-46797877-5', 'auto');
         ga('send', 'pageview');
-
     </script>
 </header>
 
@@ -34,19 +38,71 @@
             </div>
         </div>
         <div class="projects">
+            
             <div class="item">
-                <h4>The Chronicle of Higher Education</h4>
+                <h4>Longform Features</h4>
                 <a href="https://www.chronicle.com/interactives/rising-threat?key=mi0Bff1vaLHL09_no2Emg14ZvgOgguWM-2DLvXsZ9vYhnVKNsFydLbudomBCKiQhckFQbjhhZmNGZWl3cmdLSTdERkRPV2RSSEl2dmlubHJBWXJxMjJCeFdlcw">
                     <h1>Rising Threat: As the climate changes and seas swell, coastal colleges struggle to prepare</h1>
                 </a>
-                <p>Climate change and rising seas pose an unprecedented threat to coastal colleges. I pitched, reported, designed, and developed
-                this in-depth look at how four universities around the country are planning for the years ahead. This presentation was unlike
-                anything <em>The Chronicle</em> had published before, and received positive feedback from the colleges profiled and the scientific
-                community.</p>
+                <p>Climate change and rising seas pose an unprecedented threat to coastal colleges. I pitched, reported, designed,
+                    and developed this in-depth look at how four universities around the country are planning for the years
+                    ahead. This presentation was unlike anything
+                    <em>The Chronicle</em> had published before, and received positive feedback from the colleges profiled and
+                    the scientific community.
+                </p>
                 <p class="tools">MySQL, QGIS and Illustrator for maps, iMovie for drone footage editing, Photoshop, JavaScript for lazyloading
-                    and playing video</p>
+                    and playing video
+                </p>
             </div>
             <div class="item">
+                <a href="https://www.chronicle.com/interactives/public-health">
+                    <h1>A Dying Town: In a corner of Missouri and across America, the lack of a college education has become
+                        a public-health crisis.</h1>
+                </a>
+                <p>This long-form feature was a maximum-effort proect, bringing together reporters, editors, photographers,
+                    and me as the developer. To support the timeline of this project, with edits and assets coming in around
+                    the holidays when stakeholders were available at varying times, I quickly put together a library that
+                    takes text and image placement from a Google Doc, parses it to JSON, and renders the JSON to the Chronicle
+                    website, creating the longform feature dynamically. We now use this script in all of our longform presentations. I also pulled the included data and produced the
+                    charts. This piece was well received, widely circulated, and garnered a ton of traffic.
+                </p>
+                <p class="tools">Photoshop, Illustrator, JavaScript</p>
+            </div>
+            <div class="item">
+                <a href="https://www.chronicle.com/interactives/the-awakening">
+                    <h1>The Awakening: Women and Power in the Academy</h1>
+                </a>
+                <p>Due to the length and number of the essays included in this special presentation for <i>The Chronicle Review</i>, they wanted an eye-catching
+                    display that didn't overwhelm the reader with text. I designed and implemented this presentation, borrowing some styles from the print layout for continuity.
+                </p>
+                <p class="tools">JavaScript, Photoshop</p>
+            </div>
+            
+            <div class="item">
+                <h4>News Applications</h4>
+                <a href="https://projects.chronicle.com/titleix">
+                    <h1>Title IX Investigation Tracker</h1>
+                </a>
+                <p>This site tracks the Department of Education's investigations into
+                    colleges' handling of sexual assault. Users can search, filter, and group investigations by attributes
+                    like state and type of complaint. Investigation specifics like documents, details, and links are also
+                    available. I designed both web application and visualizations. Development was shared between myself and another web developer who handled most of the database and API work.
+                </p>
+                <p class="tools">Django API and app, SASS, Gulp/Bower, Canvas for data visualizations</p>
+            </div>
+            <div class="item">
+                <a href="https://data.chronicle.com">
+                    <h1>Chronicle Data</h1>
+                </a>
+                <p>Faculty, staff, and adjunct data for over 4,700 colleges and universities. For the version 2 redesign which
+                    was launched in the spring of 2016, we did a full overhaul of the website architecture, design, and visualizations.
+                    We also added functionality allowing submission of salaries. I handed design and most front-end development, while my co-worker focused on database and API work.</p>
+                    <p class="tools">Angular application, Django API, SASS, Gulp/Bower, D3 visualizations</p>
+            </div>
+
+            
+            <div class="item">
+                <h4>Interactives & Articles</h4>
                 <a href="https://www.chronicle.com/interactives/cost-of-living">
                     <h1>How Colleges Give Students a Flawed Sense of Living Costs</h1>
                 </a>
@@ -56,40 +112,33 @@
                 <p class="tools">R for data analysis, Illustrator for graphics, Leaflet for the slippy map</p>
             </div>
             <div class="item">
-                <a href="https://projects.chronicle.com/titleix">
-                    <h1>Title IX Investigation Tracker</h1>
+                <a href="https://www.philanthropy.com/interactives/Disappearing/quiz">
+                    <h1>How Well Do You Know America’s Donors?</h1>
                 </a>
-                <p>I designed and helped implement this website that tracks the Department of Education's investigations into
-                    colleges' handling of sexual assault. Users can search, filter, and group investigations by attributes
-                    like state and type of complaint. Investigation specifics like documents, details, and links are also
-                    available.</p>
-                <p class="tools">Django API and app, Canvas for data visualizations</p>
-            </div>
-            <div class="item">
-                <a href="https://data.chronicle.com">
-                    <h1>Chronicle Data</h1>
-                </a>
-                <p>Faculty, staff, and adjunct data for over 4,700 colleges and universities. For the version 2 redesign which
-                    was launched in the spring of 2016, I did a full overhaul of the website architecture, design, and visualizations.
-                    We also added functionality allowing submission of salaries.</p>
-                <p class="tools">Angular application, Django API, D3 visualizations</p>
+                <p>This interactive quiz for
+                    <i>The Chronicle of Philanthropy</i> walks readers through three unintuitive trends in giving. I designed
+                    and implemented the presentation.</p>
+                <p class="tools">JavaScript, D3.js, Chart.js</p>
             </div>
             <div class="item">
                 <a href="https://www.chronicle.com/interactives/congress-education">
                     <h1>In Congress, Even Lawmakers’ Degrees Are a Partisan Issue</h1>
                 </a>
                 <p>For this project, I created a database of lawmakers' educational attainment for the past 25 years. The results
-                    were suprising and help to explain the increasingly partisian politics in Congress.</p>
+                    were suprising and help to explain the increasingly partisian politics in Congress. I did the interactive development and a co-worker headed up reporting.</p>
                 <p class="tools">Python for data analysis, D3.js and Chart.js for graphics</p>
             </div>
             <div class="item">
                 <b>
-                    <a href="https://www.chronicle.com/search?q=%22ben+myers%22">
+                    
                         See more of my work for
-                        <em>The Chronicle</em>
+<a href="https://www.chronicle.com/search?q=%22ben+myers%22">
+    <em>The Chronicle</em>
                     </a>
                 </b>
             </div>
+
+            
             <div class="item">
                 <h4>Personal Projects</h4>
                 <a href="http://benjmyers.com/model-company/#/">
@@ -113,12 +162,12 @@
                 <p class="tools">QGIS, Illustrator</p>
             </div>
             <div class="item">
-                <a href="https://militaryimages.atavist.com/shattered-wall-of-blue-autumn-2016">
                     <h1>Magazine Articles</h1>
-                </a>
-                <p>In the past, I've contributed to
-                    <em>Military Images</em> and
-                    <em>The Civil War Times</em> magazines.</p>
+<p>I've contributed to
+    <em>Military Images</em> (
+    <a href="https://militaryimages.atavist.com/shattered-wall-of-blue-autumn-2016">Autumn 2016</a>,
+    <a href="https://militaryimages.atavist.com/old-pap-alphaeus-starkey-williams-summer-2018">Summer 2018</a> )
+ and <em>The Civil War Times</em> ( <a href="https://archive.org/details/Civil_War_Times_August_2016">August 2016</a> ) magazines.</p>
                 <p class="tools"></p>
             </div>
             <div class="item">
@@ -135,10 +184,10 @@
             <div class="skilla">
                 <h5>Data</h5>
                 <ul>
-                    <li>Visualization - D3, Canvas, matplotlib</li>
-                    <li>Analysis - Python, pandas, R</li>
-                    <li>GIS - TileMill, QGIS, gdal</li>
-                    <li>DBs - MySQL, sqlite, MongoDB</li>
+                    <li>Visualization - D3 (and wrappers), Canvas, Atlas, Illustrator</li>
+                    <li>Analysis - Python, R</li>
+                    <li>DBs - MySQL, Postgresql</li>
+                    <li>GIS - QGIS, Postgis</li>
                 </ul>
             </div>
             <div class="skilla">
@@ -146,7 +195,7 @@
                 <ul>
                     <li>Basics - JavaScript, jQuery, HTML, CSS/SASS</li>
                     <li>Frameworks - Angular, Django, Flask</li>
-                    <li>Tools - Node, NPM, Gulp, Bower</li>
+                    <li>Tools - Node, Gulp, Bower</li>
                     <li>Design - UI/UX, wireframing</li>
                 </ul>
             </div>
