@@ -2,7 +2,10 @@
   text-align: center;
   margin-bottom: 2em; }
   .top h3 {
-    margin-top: 1.5em; }
+    margin-top: 1.5em;
+    color: #393D41; }
+    .top h3:hover {
+      color: #DB6948; }
 
 .container {
   width: 70%;
@@ -10,6 +13,12 @@
   @media (max-width: 800px) {
     .container {
       width: 95%; } }
+
+a {
+  color: #DB6948;
+  text-decoration: none; }
+  a:hover {
+    color: #393D41; }
 
 .item p {
   font-size: 0.8em; }
@@ -25,13 +34,5 @@
       padding: 1.5em; } }
   .skills ul {
     padding: 0 1.2em; }
-  .skills .skill {
-    width: 32%;
-    display: inline-block;
-    vertical-align: top; }
-    @media (max-width: 800px) {
-      .skills .skill {
-        width: 100%;
-        display: block; } }
 
 /*# sourceMappingURL=projects.css.map */
