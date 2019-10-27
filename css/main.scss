@@ -94,6 +94,7 @@ p {
 
         @media (max-width: 520px) {
             font-size: 4.5rem;
+            line-height: 4.5rem;
         }
     }
 
@@ -109,7 +110,7 @@ p {
         text-transform: none;
 
         @media (max-width: 520px) {
-            margin-top: rem(8px);
+            margin-top: rem(14px);
             position: inherit;
         }
     }
@@ -176,9 +177,9 @@ p {
 
     &-name,
     &-title {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         font-weight: 700;
-        line-height: 1.4rem;
+        line-height: 1.5rem;
         margin-bottom: rem(8px);
 
         a {
@@ -191,11 +192,15 @@ p {
         display: flex;
         flex-direction: row;
         margin-bottom: rem(6px);
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &-org,
     &-year {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     &-org {
@@ -208,6 +213,14 @@ p {
             height: rem(4px);
             margin: 0 4px 3px;
             width: rem(4px);
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: rem(8px);
+
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -300,10 +313,6 @@ p {
 
     .item-inforow {
         margin-bottom: 0;
-
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
     }
 
     .item-org,
@@ -314,14 +323,6 @@ p {
 
     .item-org {
         font-weight: 700;
-
-        @media (max-width: 768px) {
-            margin-bottom: rem(8px);
-
-            &::after {
-                display: none;
-            }
-        }
     }
 }
 
@@ -335,7 +336,9 @@ p {
         flex-direction: row;
 
         @media (max-width: 520px) {
+            align-items: center;
             flex-direction: column;
+            text-align: center;
         }
     }
 

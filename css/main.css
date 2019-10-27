@@ -71,6 +71,7 @@ p {
 @media (max-width: 520px) {
   .banner h1 {
     font-size: 4.5rem;
+    line-height: 4.5rem;
   }
 }
 .banner h2 {
@@ -86,7 +87,7 @@ p {
 }
 @media (max-width: 520px) {
   .banner h2 {
-    margin-top: 0.4444444444rem;
+    margin-top: 0.7777777778rem;
     position: inherit;
   }
 }
@@ -153,9 +154,9 @@ p {
   text-transform: uppercase;
 }
 .item-name, .item-title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   margin-bottom: 0.4444444444rem;
 }
 .item-name a, .item-title a {
@@ -167,8 +168,13 @@ p {
   flex-direction: row;
   margin-bottom: 0.3333333333rem;
 }
+@media (max-width: 768px) {
+  .item-inforow {
+    flex-direction: column;
+  }
+}
 .item-org, .item-year {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .item-org::after {
   background: #666666;
@@ -178,6 +184,14 @@ p {
   height: 0.2222222222rem;
   margin: 0 4px 3px;
   width: 0.2222222222rem;
+}
+@media (max-width: 768px) {
+  .item-org {
+    margin-bottom: 0.4444444444rem;
+  }
+  .item-org::after {
+    display: none;
+  }
 }
 .item-deck {
   color: #323232;
@@ -256,11 +270,6 @@ p {
 .projects .item-inforow {
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
-  .projects .item-inforow {
-    flex-direction: column;
-  }
-}
 .projects .item-org,
 .projects .item-year {
   color: #666666;
@@ -268,14 +277,6 @@ p {
 }
 .projects .item-org {
   font-weight: 700;
-}
-@media (max-width: 768px) {
-  .projects .item-org {
-    margin-bottom: 0.4444444444rem;
-  }
-  .projects .item-org::after {
-    display: none;
-  }
 }
 
 /* Contact */
@@ -288,7 +289,9 @@ p {
 }
 @media (max-width: 520px) {
   .footer .container {
+    align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 }
 .footer .photo1 {
