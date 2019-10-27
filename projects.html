@@ -3,7 +3,6 @@
     <title>Ben Myers</title>
     <meta name="viewport" content="width=device-width" />
     <link href="./css/main.css" rel="stylesheet">
-    <link href="./css/projects.css" rel="stylesheet">
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -23,222 +22,129 @@
 </header>
 
 <body>
-    <div class="container">
-        <div class="top">
-            <div>
-                <a href="./index.html">
-                    <h3>Ben Myers</h3>
-                </a>
-                <h4>News Applications Developer</h4>
-                <p>
-                    <a href="https://twitter.com/_benjmyers">@_benjmyers</a> |
-                    <a href="https://github.com/benjmyers">github/benjmyers</a>
-                </p>
-
-            </div>
+    <div class="banner">
+        <div class="banner__titlewrap">
+            <a href="/">
+                <h1>Ben Myers</h1>
+                <h2>Code.&nbsp;&nbsp;&nbsp;Design.&nbsp;&nbsp;&nbsp;Storytelling.</h2>
+            </a>
         </div>
-        <div class="projects">
-
+    </div>
+    <div class="container projects">
+        <div class="summary">
+            <h2>Professional experience</h2>
             <div class="item">
-                <h4>Interactives & Articles</h4>
-                <a href="https://www.chronicle.com/interactives/education-deserts">
-                    <h1>Who Lives in Education Deserts?</h1>
-                </a>
-                <p>I went on a GIS deep-dive for this first-of-its-kind analysis that uses driving distances from college locations to look at the impact of geography on access to education. I pitched, reported, designed, and implemented this project.</p>
-                <p class="tools">PostGIS, QGIS, R, Illustrator, JavaScript</p>
-            </div>
-            <div class="item">
-                <a href="https://www.chronicle.com/interactives/public-health">
-                    <h1>A Dying Town: In a corner of Missouri and across America, the lack of a college education has become
-                        a public-health crisis.</h1>
-                </a>
-                <p>This long-form feature was a maximum-effort proect, bringing together reporters, editors, photographers,
-                    and me as the developer. To support the timeline of this project, with edits and assets coming in around
-                    the holidays when stakeholders were available at varying times, I quickly put together a library that
-                    takes text and image placement from a Google Doc, parses it to JSON, and renders the JSON to the Chronicle
-                    website, creating the longform feature dynamically. We now use this script in all of our longform presentations. I also pulled the included data and produced the
-                    charts. This piece was well received, widely circulated, and garnered a ton of traffic.
-                </p>
-                <p class="tools">Photoshop, Illustrator, JavaScript</p>
+                <div class="item-type">UX Designer</div>
+                <div class="item-name"><a href="https://alley.co">Alley</a></div>
+                <div class="item-desc">
+                    At Alley, I design and develop websites and data features for journalism and non-profit clients,
+                    like <a href="brookings.edu">The Brookings Institution</a> and
+                    <a href="kff.org">The Kaiser Family Foundation</a>. I pitch my designs to clients and work with them
+                    to achieve their goals. We leverage React applications and
+                    build out custom WordPress themes and plugins. We pride ourselves on ensuring our websites are
+                    accessible and the quality of our code.
+                </div>
+                <div class="item-inforow">
+                    <div class="item-org">2018&dash;present</div>
+                    <div class="item-year">React, ES6, WordPress, PHP, SASS, styled components, data visualization,
+                        accessibility, design, Sketch, Invision</div>
+                </div>
             </div>
             <div class="item">
-                <a href="https://www.philanthropy.com/interactives/Disappearing/quiz">
-                    <h1>How Well Do You Know America’s Donors?</h1>
-                </a>
-                <p>This interactive quiz for
-                    <i>The Chronicle of Philanthropy</i> walks readers through three unintuitive trends in giving. I designed
-                    and implemented the presentation.</p>
-                <p class="tools">JavaScript, D3.js, Chart.js</p>
+                <div class="item-type">News Applications Developer</div>
+                <div class="item-name"><a href="https://www.chronicle.com/">The Chronicle of Higher Education</a></div>
+                <div class="item-desc">
+                    At The Chronicle, I <a href="https://www.chronicle.com/interactives/education-deserts">analyzed
+                        data</a>,
+                    designed <a href="https://www.chronicle.com/interactives/georgetown-272">long form features</a>,
+                    <a href="https://www.philanthropy.com/interactives/Disappearing/quiz">interactives</a>, and
+                    <a href="https://data.chronicle.com">micro-sites</a>, and then brought them to life
+                    with code. I also wrote <a href="https://www.chronicle.com/search?q=ben+myers">articles</a> and
+                    <a href="https://www.chronicle.com/interactives/rising-threat">features</a>. In my last year at CHE,
+                    I
+                    co-managed the Data & Interactives team.
+                </div>
+                <div class="item-inforow">
+                    <div class="item-org">2015-2018</div>
+                    <div class="item-year">JavaScript, Python, R, MySQL, Angular, Django, SASS, data visualization,
+                        QGIS, design, Adobe Suite</div>
+                </div>
             </div>
             <div class="item">
-                <a href="https://www.chronicle.com/interactives/congress-education">
-                    <h1>In Congress, Even Lawmakers’ Degrees Are a Partisan Issue</h1>
-                </a>
-                <p>For this project, I created a database of lawmakers' educational attainment for the past 25 years. The results
-                    were suprising and help to explain the increasingly partisian politics in Congress. I did the interactive development and a co-worker headed up reporting.</p>
-                <p class="tools">Python for data analysis, D3.js and Chart.js for graphics</p>
-            </div>
-
-            <div class="item">
-                <h4>News Applications</h4>
-                <a href="https://projects.chronicle.com/titleix">
-                    <h1>Title IX Investigation Tracker</h1>
-                </a>
-                <p>This site tracks the Department of Education's investigations into
-                    colleges' handling of sexual assault. Users can search, filter, and group investigations by attributes
-                    like state and type of complaint. Investigation specifics like documents, details, and links are also
-                    available. I designed both web application and visualizations. Development was shared between myself and another web developer who handled most of the database and API work.
-                </p>
-                <p class="tools">Django API and app, SASS, Gulp/Bower, Canvas for data visualizations</p>
+                <div class="item-type">UX/UI Engineer</div>
+                <div class="item-name"><a href="https://www.dac.us/">Decisive Analytics Corporation</a></div>
+                <div class="item-desc">
+                    At DAC, I designed user interfaces and data visualizations to make the output of linguistic machine
+                    learning algorithms
+                    understandable to humans. When Malaysian flight MH-370 disappeared, we analyzed and <a
+                        href="https://mlvl.github.io/Hierarchie/">visualized</a> the
+                    most discussed topics in thousands of Tweets, Reddit posts, and news articles about the catastrophe.
+                    We presented this work at the 2014
+                    Association for Computational Linguistics conference, and had a paper published by
+                    <a href="https://nlp.stanford.edu/events/illvi2014/papers/smith-illvi2014b.pdf">Stanford's Natural
+                        Language Processing Group</a>.
+                </div>
+                <div class="item-inforow">
+                    <div class="item-org">2014-2015</div>
+                    <div class="item-year">JavaScript, Angular, Java, MongoDB, data visualization, design</div>
+                </div>
             </div>
             <div class="item">
-                <a href="https://data.chronicle.com">
-                    <h1>Chronicle Data</h1>
-                </a>
-                <p>Faculty, staff, and adjunct data for over 4,700 colleges and universities. For the version 2 redesign which was launched
-                    in the spring of 2016, we did a full overhaul of the website architecture, design, and visualizations. We also added
-                    functionality allowing submission of salaries. I handed design and most front-end development, while my co-worker
-                    focused on database and API work.</p>
-                <p class="tools">Angular application, Django API, SASS, Gulp/Bower, D3 visualizations</p>
-            </div>
-
-            <div class="item">
-                <h4>Longform Features</h4>
-                <a href="https://www.chronicle.com/interactives/rising-threat?key=mi0Bff1vaLHL09_no2Emg14ZvgOgguWM-2DLvXsZ9vYhnVKNsFydLbudomBCKiQhckFQbjhhZmNGZWl3cmdLSTdERkRPV2RSSEl2dmlubHJBWXJxMjJCeFdlcw">
-                    <h1>Rising Threat: As the climate changes and seas swell, coastal colleges struggle to prepare</h1>
-                </a>
-                <p>Climate change and rising seas pose an unprecedented threat to coastal colleges. I pitched, reported, designed, and developed
-                    this in-depth look at how four universities around the country are planning for the years ahead. This presentation
-                    was unlike anything
-                    <em>The Chronicle</em> had published before, and received positive feedback from the colleges profiled and the scientific
-                    community.
-                </p>
-                <p class="tools">MySQL, QGIS and Illustrator for maps, iMovie for drone footage editing, Photoshop, JavaScript for lazyloading and playing
-                    video
-                </p>
+                <div class="item-type">Software Engineer</div>
+                <div class="item-name">Mission Focus</div>
+                <div class="item-desc">
+                    At Mission Focus I worked on a web application to search and make sense of large quantities of
+                    communications data, including email, texts, Tweets,
+                    photos, and video. Unfortunately, this work isn't publicly accessible.
+                </div>
+                <div class="item-inforow">
+                    <div class="item-org">2013-2014</div>
+                    <div class="item-year">JavaScript, EmberJS, Java, Clojure, server admin, data visualization, design
+                    </div>
+                </div>
             </div>
             <div class="item">
-                <a href="https://www.chronicle.com/interactives/public-health">
-                    <h1>A Dying Town: In a corner of Missouri and across America, the lack of a college education has become a public-health
-                        crisis.</h1>
-                </a>
-                <p>This long-form feature was a maximum-effort proect, bringing together reporters, editors, photographers, and me as the
-                    developer. To support the timeline of this project, with edits and assets coming in around the holidays when stakeholders
-                    were available at varying times, I quickly put together a library that takes text and image placement from a Google
-                    Doc, parses it to JSON, and renders the JSON to the Chronicle website, creating the longform feature dynamically.
-                    We now use this script in all of our longform presentations. I also pulled the included data and produced the charts.
-                    This piece was well received, widely circulated, and garnered a ton of traffic.
-                </p>
-                <p class="tools">Photoshop, Illustrator, JavaScript</p>
-            </div>
-            <div class="item">
-                <a href="https://www.chronicle.com/interactives/the-awakening">
-                    <h1>The Awakening: Women and Power in the Academy</h1>
-                </a>
-                <p>Due to the length and number of the essays included in this special presentation for
-                    <i>The Chronicle Review</i>, they wanted an eye-catching display that didn't overwhelm the reader with text. I designed
-                    and implemented this presentation, borrowing some styles from the print layout for continuity.
-                </p>
-                <p class="tools">JavaScript, Photoshop</p>
-            </div>
-            <div class="item">
-                <b>
-                    
-                        See more of my work for
-<a href="https://www.chronicle.com/search?q=%22ben+myers%22">
-    <em>The Chronicle</em>
-                    </a>
-                </b>
-            </div>
-
-            
-            <div class="item">
-                <h4>Personal Projects</h4>
-                <a href="https://benjmyers.com/model-company/#/">
-                    <h1>Model Company: An Uncommon Look at the Common Civil War Soldier</h1>
-                </a>
-                <p>Who was the common Civil War soldier? I researched, designed, implemented, and wrote the accompanying article
-                    for this project that explores the personal attributes, occupations, and fates of 92 soldiers. An abridged
-                    version of this piece was feature in the August 2016 issue of
-                    <i>Civil War Times</i> magazine.</p>
-                <p class="tools">Angular for the web application and D3 and Leaflet for data visualizations</p>
-            </div>
-            <div class="item">
-                <a href="SAMPLE_MAP.jpg">
-                    <h1>Civil War Maps</h1>
-                </a>
-                <p>In preparation for my soon-to-be-released book
-                    <em>American Citizen: The Civil War writings of Captain George A. Brooks</em> (non-fiction, Sunbury Press),
-                    I created a series of maps showing the route Captain Brooks's regiment, the 46th Pennsylvania Infantry,
-                    marched during the Civil War. For these, I did everything from generating a basemap using Digital Elevation
-                    Models to creating a Civil War era roads shapefile and geocoding locations relevant to the regiment.</p>
-                <p class="tools">QGIS, Illustrator</p>
-            </div>
-            <div class="item">
-                    <h1>Magazine Articles</h1>
-<p>I've contributed to
-    <em>Military Images</em> (
-    <a href="https://militaryimages.atavist.com/shattered-wall-of-blue-autumn-2016">Autumn 2016</a>,
-    <a href="https://militaryimages.atavist.com/old-pap-alphaeus-starkey-williams-summer-2018">Summer 2018</a> )
- and <em>The Civil War Times</em> ( <a href="https://archive.org/details/Civil_War_Times_August_2016">August 2016</a> ) magazines.</p>
-                <p class="tools"></p>
-            </div>
-            <div class="item">
-                <a href="https://benjmyers.com/ratmap/#/">
-                    <h1>NYC Ratmap</h1>
-                </a>
-                <p>There are a lot of rats in New York City, and a lot of people complaining about them. This map shows the
-                    most recent 311 'Rodent' complaints, updated daily.</p>
-                <p class="tools">Angular, Leaflet</p>
-            </div>
-        </div>
-        <div class="skills">
-            <h4>Technical Skills</h4>
-            <div class="skilla">
-                <h5>Data</h5>
-                <ul>
-                    <li>Visualization - D3 (and wrappers), Canvas, Atlas, Illustrator</li>
-                    <li>Analysis - Python, R</li>
-                    <li>DBs - MySQL, Postgresql</li>
-                    <li>GIS - QGIS, Postgis</li>
-                </ul>
-            </div>
-            <div class="skilla">
-                <h5>Web</h5>
-                <ul>
-                    <li>Basics - JavaScript, jQuery, HTML, CSS/SASS</li>
-                    <li>Frameworks - Angular, Django, Flask</li>
-                    <li>Tools - Node, Gulp, Bower</li>
-                    <li>Design - UI/UX, wireframing</li>
-                </ul>
-            </div>
-            <div class="skilla">
-                <h5>Everything Else</h5>
-                <ul>
-                    <li>Git</li>
-                    <li>Unix/MacOS environments and system admin</li>
-                    <li>Adobe Illustrator/Photoshop</li>
-                    <li>Past experience with Java, Android, and Arduino</li>
-                    <li>Audio recording/mixing</li>
-                    <li>Electronics prototyping</li>
-                    <li>Writing (journalism/magazines)</li>
-                    <li>Research & reporting</li>
-                    <li>Project & team management</li>
-                </ul>
-            </div>
-        </div>
-        <div class="projects">
-            <div class="item">
-                <h4>Education</h4>
-                <h1>American University</h1>
-                <h3>Washington, DC</h3>
-                <p>B.S. Computer Science & Audio Technology (double major), 2013.</p>
+                <div class="item-type">Intern</div>
+                <div class="item-name">DARPA (GXM Consulting)</div>
+                <div class="item-desc">
+                    While with DARPA's <a href="https://en.wikipedia.org/wiki/TransApps">TransApps program</a> I had the
+                    opportunity to help
+                    develop the first Android phone tailored for tactical use. I conducted research, helped provision
+                    Android devices, and instructed military personnel
+                    on their use. I also designed and developed applications, including an app that facilitated the
+                    collection of evidence
+                    at sites of strategic interest.
+                </div>
+                <div class="item-inforow">
+                    <div class="item-org">2011-2013</div>
+                    <div class="item-year">Java, Android, data visualization, design</div>
+                </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="photo1"></div>
+            <div class="contact__info">
+                <h3>Get In Touch</h3>
+                <div class="contact__wrap">
+                    <div class="contact">
+                        <div class="label">Email</div>
+                        <div class="link"><a href="mailto:ben@benjmyers.com">ben@benjmyers.com</a></div>
+                    </div>
+                    <div class="contact">
+                        <div class="label">Github</div>
+                        <div class="link"><a href="https://github.com/benjmyers">benjmyers</a></div>
+                    </div>
+                    <div class="contact">
+                        <div class="label">Twitter</div>
+                        <div class="link"><a href="https://twitter.com/_benjmyers">@_benjmyers</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

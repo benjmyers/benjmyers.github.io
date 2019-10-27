@@ -1,50 +1,349 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
-@import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
+@import url("https://fonts.googleapis.com/css?family=Fjord+One|Roboto:300,400,600,700&display=swap");
+/* Color definitions */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  color: #393D41;
-  background-color: #fefefe; }
-  @media (min-width: 800px) {
-    body {
-      font-size: 16px; } }
+  background-color: #fefefe;
+  box-sizing: border-box;
+  color: #000000;
+  font: 400 18px "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  color: #393D41;
-  text-decoration: none; }
-  a:hover {
-    color: #DB6948; }
+  color: #006a94;
+  font-weight: 600;
+  letter-spacing: 0.1;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-h3,
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5em;
-  font-weight: 800;
+h1,
+h2 {
   margin: 0;
-  line-height: 1.1em; }
+}
 
 h1 {
-  font-size: 5em; }
+  font: 400 5.8333333333rem "Fjord One", serif;
+}
 
+h2 {
+  font: 700 1.3333333333rem "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  color: #323232;
+  font: 400 1.1111111111rem "Roboto", sans-serif;
+  line-height: 1.5555555556rem;
+  margin: 0;
+}
+
+.banner {
+  background-color: #F4F4F4;
+  padding: 2.2222222222rem 2.2222222222rem 3.3333333333rem;
+  text-align: left;
+  width: 100%;
+}
+.banner .banner__titlewrap {
+  display: block;
+  max-width: 71.1111111111rem;
+  margin: auto;
+  position: relative;
+  text-align: left;
+}
+@media (max-width: 520px) {
+  .banner .banner__titlewrap {
+    text-align: center;
+  }
+}
+.banner a {
+  text-decoration: none;
+}
+.banner h1 {
+  color: #000000;
+}
+@media (max-width: 520px) {
+  .banner h1 {
+    font-size: 4.5rem;
+  }
+}
+.banner h2 {
+  color: #006a94;
+  font: 400 1.1rem "Roboto", sans-serif;
+  bottom: -0.2777777778rem;
+  font-weight: 300;
+  font-size: 1.1111111111rem;
+  left: 0.5555555556rem;
+  letter-spacing: 1px;
+  position: absolute;
+  text-transform: none;
+}
+@media (max-width: 520px) {
+  .banner h2 {
+    margin-top: 0.4444444444rem;
+    position: inherit;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 71.1111111111rem;
+  padding: 2.2222222222rem 2.2222222222rem 3.3333333333rem;
+}
+
+.container.work {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .container.work {
+    flex-direction: column;
+  }
+}
+
+/* Featured projects */
+.container.work .intro {
+  font-size: 2.6666666667rem;
+  font-family: "Fjord One", serif;
+  margin-top: 1.7rem;
+  text-align: right;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .container.work .intro {
+    font-size: 2.2222222222rem;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.summary {
+  flex-grow: 1;
+  margin-left: 6%;
+}
+@media (max-width: 768px) {
+  .summary {
+    margin-left: inherit;
+  }
+}
+
+/* List item styles */
 .item {
-  padding: 1em 1%; }
-  @media (min-width: 800px) {
-    .item {
-      padding: 1.5em; } }
-  .item h1 {
-    font-family: 'Amiri';
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
-    line-height: 1em; }
-  .item h3 {
-    color: #788087;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    margin: 0; }
+  border-left: 2px solid #666666;
+  margin: 2.2222222222rem 0 3.3333333333rem 2.2222222222rem;
+  padding: 0.6666666667rem 0 0.6666666667rem 1.1111111111rem;
+}
+@media (max-width: 768px) {
+  .item {
+    margin-left: 0;
+  }
+}
+.item-type, .item-pub {
+  color: #323232;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4444444444rem;
+  text-transform: uppercase;
+}
+.item-name, .item-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  margin-bottom: 0.4444444444rem;
+}
+.item-name a, .item-title a {
+  color: #000000;
+}
+.item-inforow {
+  color: #323232;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.3333333333rem;
+}
+.item-org, .item-year {
+  font-size: 1rem;
+}
+.item-org::after {
+  background: #666666;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 0.2222222222rem;
+  margin: 0 4px 3px;
+  width: 0.2222222222rem;
+}
+.item-deck {
+  color: #323232;
+  font-size: 1rem;
+  margin-bottom: 0.4444444444rem;
+}
+.item-date, .item-desc {
+  color: #666666;
+  font-size: 0.8rem;
+}
+.item.more {
+  margin-bottom: 0;
+}
+.item.more a {
+  color: #323232;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Writing Section */
+.container.writing .intro {
+  font-family: "Fjord One", serif;
+  font-size: 2.6666666667rem;
+}
+.container.writing .writing-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container.writing .item {
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  padding-right: 2.2222222222rem;
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .container.writing .item {
+    width: 50%;
+  }
+}
+@media (max-width: 520px) {
+  .container.writing .item {
+    margin: 2.2222222222rem 0 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+.container.writing .item:last-of-type {
+  padding: 0;
+}
+.container.writing img {
+  height: auto;
+  margin-bottom: 0.6666666667rem;
+  width: 150px;
+}
+
+/* Work summary */
+.projects {
+  max-width: 50rem;
+}
+.projects .summary {
+  margin-left: 0;
+}
+.projects .item {
+  margin-left: 0;
+}
+.projects .item-desc {
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.4444444444rem;
+}
+.projects .item-inforow {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .projects .item-inforow {
+    flex-direction: column;
+  }
+}
+.projects .item-org,
+.projects .item-year {
+  color: #666666;
+  font-size: 0.8rem;
+}
+.projects .item-org {
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .projects .item-org {
+    margin-bottom: 0.4444444444rem;
+  }
+  .projects .item-org::after {
+    display: none;
+  }
+}
+
+/* Contact */
+.footer {
+  background-color: #F4F4F4;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 520px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+.footer .photo1 {
+  background-image: url("../images/BenMyers_01_sm.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 11.1111111111rem;
+  margin-right: 2.2222222222rem;
+  width: 11.1111111111rem;
+}
+@media (max-width: 520px) {
+  .footer .photo1 {
+    margin-right: 0;
+  }
+}
+.footer .contact__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+.footer h3 {
+  font-family: "Fjord One", serif;
+  font-weight: 700;
+}
+.footer .contact__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .footer .contact__wrap {
+    flex-direction: column;
+  }
+}
+.footer .contact {
+  margin-bottom: 0.3333333333rem;
+  margin-right: 2.2222222222rem;
+}
+@media (max-width: 768px) {
+  .footer .contact {
+    margin-bottom: 1.1111111111rem;
+    margin-right: 0;
+  }
+}
+.footer .label {
+  color: #666666;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-right: 0.4444444444rem;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=main.css.map */

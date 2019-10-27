@@ -1,59 +1,398 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800);
-@import url(https://fonts.googleapis.com/css?family=Amiri:400,700);
-$font-color: #393D41;
-$font-grey: #788087;
-$font-highlight: #DB6948;
+@import url('https://fonts.googleapis.com/css?family=Fjord+One|Roboto:300,400,600,700&display=swap');
+@import 'mixins';
+
+/* Color definitions */
+$color-black: #000000;
+$color-gray: #323232;
+$color-medgray: #666666;
+$color-lightgray: #F4F4F4;
+$color-white: #fefefe;
+$color-accent: #006a94;
+
+// DB6948
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Fjord One', serif;
+$font-color: $color-black;
+$font-grey: $color-gray;
+$font-highlight: $color-accent;
+
+$spacer: rem(40px);
+$column-width: rem(1280px);
+$container-padding: $spacer $spacer rem(60px);
+
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    background-color: $color-white;
+    box-sizing: border-box;
     color: $font-color;
-    background-color: #fefefe;
-    @media (min-width: 800px) {
-        font-size: 16px;
-    }
+    font: 400 18px $font-primary;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: $font-color;
+    color: $font-highlight;
+    font-weight: 600;
+    letter-spacing: 0.1;
     text-decoration: none;
+
     &:hover {
-        color: $font-highlight;
+        text-decoration: underline;
     }
 }
 
-h3,
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    font-weight: 800;
+h1,
+h2 {
     margin: 0;
-    line-height: 1.1em;
 }
 
 h1 {
-    font-size: 5em;
+    font: 400 rem(105px) $font-secondary;
 }
 
-.item {
-    padding: 1em 1%;
-    @media (min-width: 800px) {
-        padding: 1.5em;
+h2 {
+    font: 700 rem(24px) $font-primary;
+    text-transform: uppercase;
+}
+
+p {
+    color: $color-gray;
+    font: 400 rem(20px) $font-primary;
+    line-height: rem(28px);
+    margin: 0;
+
+}
+
+.banner {
+    background-color: $color-lightgray;
+    padding: $container-padding;
+    text-align: left;
+    width: 100%;
+
+    .banner__titlewrap {
+        display: block;
+        max-width: $column-width;
+        margin: auto;
+        position: relative;
+        text-align: left;
+
+        @media (max-width: 520px) {
+            text-align: center;
+        }
     }
+
+    a {
+        text-decoration: none;
+    }
+
     h1 {
-        font-family: 'Amiri';
-        font-weight: 400;
-        font-size: 20px;
-        margin: 0;
-        line-height: 1em;
+        color: $color-black;
+
+        @media (max-width: 520px) {
+            font-size: 4.5rem;
+        }
     }
+
+    h2 {
+        color: $color-accent;
+        font: 400 1.1rem $font-primary;
+        bottom: rem(-5px);
+        font-weight: 300;
+        font-size: rem(20px);
+        left: rem(10px);
+        letter-spacing: 1px;
+        position: absolute;
+        text-transform: none;
+
+        @media (max-width: 520px) {
+            margin-top: rem(8px);
+            position: inherit;
+        }
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $column-width;
+    padding: $container-padding;
+}
+
+.container.work {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+/* Featured projects */
+.container.work .intro {
+    font-size: rem(48px);
+    font-family: $font-secondary;
+    margin-top: 1.7rem;
+    text-align: right;
+    width: 50%;
+
+    @media (max-width: 768px) {
+        font-size: rem(40px);
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.summary {
+    flex-grow: 1;
+    margin-left: 6%;
+
+    @media (max-width: 768px) {
+        margin-left: inherit;
+    }
+}
+
+/* List item styles */
+.item {
+    border-left: 2px solid $color-medgray;
+    margin: $spacer 0 rem(60px) $spacer;
+    padding: rem(12px) 0 rem(12px) rem(20px);
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    &-type,
+    &-pub {
+        color: $color-gray;
+        font-size: 0.75rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        margin-bottom: rem(8px);
+        text-transform: uppercase;
+    }
+
+    &-name,
+    &-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+        margin-bottom: rem(8px);
+
+        a {
+            color: $color-black;
+        }
+    }
+
+    &-inforow {
+        color: $color-gray;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: rem(6px);
+    }
+
+    &-org,
+    &-year {
+        font-size: 1rem;
+    }
+
+    &-org {
+
+        &::after {
+            background: $color-medgray;
+            border-radius: 50%;
+            content: '';
+            display: inline-block;
+            height: rem(4px);
+            margin: 0 4px 3px;
+            width: rem(4px);
+        }
+    }
+
+    &-deck {
+        color: $color-gray;
+        font-size: 1rem;
+        margin-bottom: rem(8px);
+    }
+
+    &-date,
+    &-desc {
+        color: $color-medgray;
+        font-size: 0.8rem;
+    }
+
+    &.more {
+        margin-bottom: 0;
+
+        a {
+            color: $color-gray;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    }
+}
+
+/* Writing Section */
+.container.writing {
+
+    .intro {
+        font-family: $font-secondary;
+        font-size: rem(48px);
+    }
+
+    .writing-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        border: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        padding-right: $spacer;
+        width: 25%;
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+
+        @media (max-width: 520px) {
+            margin: $spacer 0 0;
+            padding-right: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        &:last-of-type {
+            padding: 0;
+        }
+    }
+
+    img {
+        height: auto;
+        margin-bottom: rem(12px);
+        width: 150px;
+    }
+}
+
+/* Work summary */
+.projects {
+    max-width: rem(900px);
+
+    .summary {
+        margin-left: 0;
+    }
+
+    .item {
+        margin-left: 0;
+    }
+
+    .item-desc {
+        color: $color-black;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+        margin-bottom: rem(8px);
+    }
+
+    .item-inforow {
+        margin-bottom: 0;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .item-org,
+    .item-year {
+        color: $color-medgray;
+        font-size: 0.8rem;
+    }
+
+    .item-org {
+        font-weight: 700;
+
+        @media (max-width: 768px) {
+            margin-bottom: rem(8px);
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/* Contact */
+.footer {
+    background-color: $color-lightgray;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: 520px) {
+            flex-direction: column;
+        }
+    }
+
+    .photo1 {
+        background-image: url('../images/BenMyers_01_sm.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        height: rem(200px);
+        margin-right: $spacer;
+        width: rem(200px);
+
+        @media (max-width: 520px) {
+            margin-right: 0;
+        }
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
     h3 {
-        color: $font-grey;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        margin: 0;
+        font-family: $font-secondary;
+        font-weight: 700;
+    }
+
+    .contact__wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    .contact {
+        margin-bottom: rem(6px);
+        margin-right: $spacer;
+
+        @media (max-width: 768px) {
+            margin-bottom: rem(20px);
+            margin-right: 0;
+        }
+    }
+
+    .label {
+        color: $color-medgray;
+        font-size: 0.75rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        margin-right: rem(8px);
+        text-transform: uppercase;
     }
 }
