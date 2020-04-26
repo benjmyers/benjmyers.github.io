@@ -255,6 +255,15 @@ p {
         font-size: rem(48px);
     }
 
+    .intro-desc {
+        margin-top: rem(10px);
+
+        a {
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+    }
+
     .writing-wrapper {
         display: flex;
         flex-direction: row;
