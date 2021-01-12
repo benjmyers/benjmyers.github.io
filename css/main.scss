@@ -6,7 +6,7 @@ $color-black: #000000;
 $color-gray: #323232;
 $color-medgray: #666666;
 $color-lightgray: #F4F4F4;
-$color-white: #fefefe;
+$color-white: #fafafa;
 $color-accent: #006a94;
 
 // DB6948
@@ -64,7 +64,6 @@ p {
     font: 400 rem(20px) $font-primary;
     line-height: rem(28px);
     margin: 0;
-
 }
 
 .banner {
@@ -102,7 +101,7 @@ p {
         color: $color-accent;
         font: 400 1.1rem $font-primary;
         bottom: rem(-5px);
-        font-weight: 300;
+        font-weight: 400;
         font-size: rem(20px);
         left: rem(10px);
         letter-spacing: 1px;
@@ -133,14 +132,14 @@ p {
 
 /* Featured projects */
 .container.work .intro {
-    font-size: rem(48px);
+    font-size: rem(36px);
     font-family: $font-secondary;
-    margin-top: 1.7rem;
+    margin-top: 2.5rem;
     text-align: right;
-    width: 50%;
+    width: 40%;
 
     @media (max-width: 768px) {
-        font-size: rem(40px);
+        font-size: rem(28px);
         text-align: left;
         width: 100%;
     }
@@ -149,9 +148,11 @@ p {
 .summary {
     flex-grow: 1;
     margin-left: 6%;
+    max-width: 65%;
 
     @media (max-width: 768px) {
         margin-left: inherit;
+        max-width: none;
     }
 }
 
@@ -167,9 +168,9 @@ p {
 
     &-type,
     &-pub {
-        color: $color-gray;
+        color: $color-accent;
         font-size: 0.75rem;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 0.05em;
         margin-bottom: rem(8px);
         text-transform: uppercase;
@@ -191,7 +192,7 @@ p {
         color: $color-gray;
         display: flex;
         flex-direction: row;
-        margin-bottom: rem(6px);
+        margin-bottom: rem(9px);
 
         @media (max-width: 768px) {
             flex-direction: column;
@@ -237,10 +238,11 @@ p {
     }
 
     &.more {
+        border: none;
         margin-bottom: 0;
 
         a {
-            color: $color-gray;
+            color: $color-accent;
             font-size: 0.9rem;
             font-style: italic;
         }
@@ -307,6 +309,7 @@ p {
 
     .summary {
         margin-left: 0;
+        max-width: none;
     }
 
     .item {

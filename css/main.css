@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #fefefe;
+  background-color: #fafafa;
   box-sizing: border-box;
   color: #000000;
   font: 400 18px "Roboto", sans-serif;
@@ -78,7 +78,7 @@ p {
   color: #006a94;
   font: 400 1.1rem "Roboto", sans-serif;
   bottom: -0.2777777778rem;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1111111111rem;
   left: 0.5555555556rem;
   letter-spacing: 1px;
@@ -110,15 +110,15 @@ p {
 
 /* Featured projects */
 .container.work .intro {
-  font-size: 2.6666666667rem;
+  font-size: 2rem;
   font-family: "Fjord One", serif;
-  margin-top: 1.7rem;
+  margin-top: 2.5rem;
   text-align: right;
-  width: 50%;
+  width: 40%;
 }
 @media (max-width: 768px) {
   .container.work .intro {
-    font-size: 2.2222222222rem;
+    font-size: 1.5555555556rem;
     text-align: left;
     width: 100%;
   }
@@ -127,10 +127,12 @@ p {
 .summary {
   flex-grow: 1;
   margin-left: 6%;
+  max-width: 65%;
 }
 @media (max-width: 768px) {
   .summary {
     margin-left: inherit;
+    max-width: none;
   }
 }
 
@@ -146,9 +148,9 @@ p {
   }
 }
 .item-type, .item-pub {
-  color: #323232;
+  color: #006a94;
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.05em;
   margin-bottom: 0.4444444444rem;
   text-transform: uppercase;
@@ -166,7 +168,7 @@ p {
   color: #323232;
   display: flex;
   flex-direction: row;
-  margin-bottom: 0.3333333333rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 768px) {
   .item-inforow {
@@ -203,10 +205,11 @@ p {
   font-size: 0.8rem;
 }
 .item.more {
+  border: none;
   margin-bottom: 0;
 }
 .item.more a {
-  color: #323232;
+  color: #006a94;
   font-size: 0.9rem;
   font-style: italic;
 }
@@ -264,6 +267,7 @@ p {
 }
 .projects .summary {
   margin-left: 0;
+  max-width: none;
 }
 .projects .item {
   margin-left: 0;
