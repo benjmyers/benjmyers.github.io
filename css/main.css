@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #FFF1E6;
+  background-color: #fafafa;
   box-sizing: border-box;
   color: #323232;
   font: 400 18px "Public Sans", sans-serif;
@@ -21,6 +21,7 @@ body {
 @media (max-width: 768px) {
   body {
     margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -43,273 +44,80 @@ h2 {
 }
 
 h1 {
-  font: 500 4.7777777778rem "Brygada1918", serif;
-}
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
+  color: #fafafa;
 }
 
 h2 {
-  font: 700 1rem "Public Sans", sans-serif;
-  margin-bottom: 0.4444444444rem;
+  font: 400 2.6666666667rem "Brygada1918", serif;
+  line-height: 1.5;
+  margin-bottom: 1.6666666667rem;
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 0.8888888889rem;
+    font-size: 1.7777777778rem;
   }
 }
 
 p {
-  font: 400 1.1111111111rem "Public Sans", sans-serif;
+  font: 400 1.1111111111rem "Brygada1918", serif;
   line-height: 1.5555555556rem;
   margin: 0;
 }
 
-.banner {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: left;
-  width: 100%;
-}
-.banner .photo1 {
-  background-image: url("../images/BenMyers_01_sm.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-  height: 15rem;
-  filter: grayscale(30%);
-  width: 15rem;
-}
-@media (max-width: 768px) {
-  .banner .photo1 {
-    height: 8.3333333333rem;
-    width: 8.3333333333rem;
-  }
-}
-.banner .banner__titlewrap {
-  flex-grow: 1;
-}
-.banner .divider {
-  background-color: #A5A58D;
-  height: 1px;
-  margin-top: -0.8333333333rem;
-  width: 100%;
-}
-.banner h1 {
-  margin-left: 1.6666666667rem;
-}
-.banner h2 {
-  font-weight: 400;
-  margin-left: calc(1.6666666667rem + 4px);
-  margin-top: 1rem;
-}
-@media (max-width: 768px) {
-  .banner h2 {
-    margin-top: 0.5555555556rem;
-  }
+img {
+  border-radius: 10%;
+  width: 400px;
 }
 
-/** Section Spacing */
-.intro,
-.work,
-.footer {
-  margin-top: calc(3.3333333333rem * 1.5);
-}
-@media (max-width: 768px) {
-  .intro,
-.work,
-.footer {
-    margin-top: calc(3.3333333333rem * 1);
-  }
-}
-
-.writing,
-.contact {
-  margin-top: calc(3.3333333333rem * 4);
-}
-@media (max-width: 768px) {
-  .writing,
-.contact {
-    margin-top: calc(3.3333333333rem * 2);
-  }
-}
-
-/** End Section Spacing */
-.intro {
-  font-size: 1.1111111111rem;
-  font-family: "Public Sans", sans-serif;
-  line-height: 1.7777777778rem;
-  width: 70%;
-}
-@media (max-width: 768px) {
-  .intro {
-    font-size: 0.8888888889rem;
-    line-height: 1.5555555556rem;
-    width: 90%;
-  }
-}
-
-/* List item styles */
-.item {
-  align-items: flex-end;
-  border-top: 1px solid #A5A58D;
+.container {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   margin-bottom: calc(3.3333333333rem * 1.5);
   padding: 1.6666666667rem 0 0;
 }
 @media (max-width: 768px) {
-  .item {
+  .container {
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: calc(3.3333333333rem * 0.8);
   }
 }
-.item .item__left {
-  margin-right: 1.6666666667rem;
-  width: 50%;
+.container .left {
+  width: 30%;
 }
 @media (max-width: 768px) {
-  .item .item__left {
+  .container .left {
     width: 100%;
   }
 }
-.item .item__right {
-  width: 50%;
+.container .right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 @media (max-width: 768px) {
-  .item .item__right {
+  .container .right {
     width: 100%;
   }
 }
-.item-type, .item-pub {
-  color: #323232;
-  font-size: 0.8333333333rem;
-  font-weight: 300;
-  margin-bottom: 0.4444444444rem;
+.container img {
+  margin-bottom: 3.3333333333rem;
+  width: 400px;
 }
 @media (max-width: 768px) {
-  .item-type, .item-pub {
-    font-size: 0.7777777778rem;
+  .container img {
+    width: 100%;
   }
 }
-.item-name, .item-title {
-  font-family: "Brygada1918", serif;
-  font-size: 1.6666666667rem;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 0.4444444444rem;
+.container img.wide {
+  width: 550px;
 }
 @media (max-width: 768px) {
-  .item-name, .item-title {
-    font-size: 1.3333333333rem;
+  .container img.wide {
+    width: 100%;
   }
-}
-.item-name a, .item-title a {
-  border-bottom: none;
-}
-.item-name a:hover, .item-title a:hover {
-  border-bottom: 4px solid #B7B7A4;
-}
-.item .item-desc {
-  color: #65615F;
-  font-size: 0.7777777778rem;
-  font-weight: 300;
-  letter-spacing: 0.01rem;
-  margin-bottom: 0.5555555556rem;
-  margin-right: 1.6666666667rem;
-  text-align: right;
-  text-transform: uppercase;
-}
-@media (max-width: 768px) {
-  .item .item-desc {
-    font-size: 0.6666666667rem;
-    margin-top: 0.5555555556rem;
-    text-align: left;
-  }
-}
-.item.more {
-  padding: 0;
-  margin: 0;
-}
-.item.more a {
-  background-color: #B7B7A4;
-  border-bottom: none;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.8888888889rem;
-  padding: 1.6666666667rem;
-  transition: all 500ms ease-in-out;
-  width: 100%;
-}
-.item.more a:hover {
-  background-color: #A5A58D;
-  font-style: italic;
-}
-
-/* Writing Section */
-.container.writing .item-deck {
-  font-family: "Brygada1918", serif;
-  font-size: 1rem;
-}
-.container.writing .item-type {
-  font-size: 0.8333333333rem;
-  margin-top: 0.4444444444rem;
-}
-.container.writing .item-desc {
-  clear: both;
-  text-transform: none;
-}
-.container.writing .item-desc a {
-  background-color: #B7B7A4;
-  border-bottom: none;
-  display: inline-block;
-  font-family: "Public Sans", sans-serif;
-  font-size: 0.8888888889rem;
-  font-weight: 400;
-  padding: 1.6666666667rem;
-  transition: all 500ms ease-in-out;
-  width: auto;
-}
-.container.writing .item-desc a:hover {
-  background-color: #A5A58D;
-  font-style: italic;
-}
-
-/* Contact */
-.contact .item {
-  margin-bottom: 1.6666666667rem;
-}
-.contact div {
-  font-size: 1rem;
-}
-.contact .label {
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.0555555556rem;
-  margin-right: 1.6666666667rem;
-  width: 8%;
-}
-@media (max-width: 768px) {
-  .contact .label {
-    width: 10%;
-  }
-}
-.contact .link {
-  font-family: "Brygada1918", serif;
-  font-weight: 700;
-  line-height: 1rem;
-}
-
-.footer {
-  background-color: #EDDCD2;
-  font-size: 0.6666666667rem;
-  font-weight: 700;
-  padding: 1.6666666667rem;
 }
 
 /*# sourceMappingURL=main.css.map */
